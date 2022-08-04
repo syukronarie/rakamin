@@ -1,5 +1,5 @@
 
-<h1 align="center">Welcome to jsonrawtoxlsx 👋</h1>
+<h1 align="center">Welcome to rakamin 👋</h1>
 <p align="center">
   <a href="https://github.com/syukronarie/rakamin/blob/main/LICENSE">
     <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-yellow.svg" target="_blank" />
