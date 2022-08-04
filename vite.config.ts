@@ -33,6 +33,8 @@ export default defineConfig({
 			functions: 80,
 			lines: 80,
 		},
+		passWithNoTests: true,
+		watch: false,
 	},
 	define: {
 		'process.env': process.env,

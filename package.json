@@ -21,9 +21,9 @@
 		"coverage": "vitest run --coverage",
 		"lint": "npx eslint src",
 		"lint:fix": "npm run lint -- --fix",
-		"prepare": "husky install",
 		"prettier": "npx prettier src --check",
 		"prettier:fix": "npm run prettier -- --write",
+		"prepare": "husky install",
 		"format": "npm run prettier:fix && npm run lint:fix"
 	},
 	"dependencies": {
