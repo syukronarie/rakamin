@@ -4,6 +4,9 @@
   <a href="https://github.com/syukronarie/rakamin/blob/main/LICENSE">
     <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-yellow.svg" target="_blank" />
   </a>
+  <a href="https://github.com/syukronarie/rakamin/actions">
+    <img alt="License: MIT" src="https://github.com/syukronarie/rakamin/actions/workflows/check.yml/badge.svg" target="_blank" />
+  </a>
   <a href="https://codecov.io/gh/syukronarie/rakamin">
     <img src="https://codecov.io/gh/syukronarie/rakamin/branch/main/graph/badge.svg" />
   </a>
