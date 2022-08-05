@@ -1,10 +1,17 @@
-import './App.css';
+import './App.scss';
+import { Button, ConfigProvider } from 'antd';
+
+ConfigProvider.config({
+	theme: {
+		primaryColor: '#01959F',
+	},
+});
 
 function App() {
 	return (
-		<div className="App">
-			<h2>App</h2>
-		</div>
+		<ConfigProvider>
+			<Button>Test</Button>
+		</ConfigProvider>
 	);
 }
 
