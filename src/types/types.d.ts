@@ -9,3 +9,8 @@ interface SignUpArgs {
 	password: string;
 	passwordConfirmation: string;
 }
+
+interface CreateTodoArgs {
+	title: string;
+	description: string;
+}
