@@ -43,12 +43,6 @@ const todoSampleCreateResultData = {
 	updated_at: '2021-04-20T23:47:50.046Z',
 };
 
-const sampleSomethingWrongData = {
-	message: 'Something went wrong',
-};
-
-const regexSWW = /Something went wrong/;
-
 export {
 	todoSampleResultData,
 	todoSampleArgsData,
@@ -56,6 +50,4 @@ export {
 	todoSampleTitleNullArgsData,
 	todoSampleDescNullArgsData,
 	todoSampleCreateResultData,
-	sampleSomethingWrongData,
-	regexSWW,
 };
