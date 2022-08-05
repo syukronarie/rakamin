@@ -1,5 +1,5 @@
 const CONST = {
-	BASE_API_URL: `${process.env.BASE_URL}/api`,
+	BASE_API_URL: `${process.env.BASE_URL_API}`,
 	APP_NAME: 'rakamin',
 };
 
