@@ -17,7 +17,7 @@ const todoAPI = {
 		}
 	},
 
-	async createTodos({ title, description }: CreateTodoArgs): Promise<AxiosResponse> {
+	async createTodo({ title, description }: CreateTodoArgs): Promise<AxiosResponse> {
 		if (title === undefined || title === null || description === undefined || description === null)
 			throw new ClientError(ERR_MSG.MANDATORY_FIELD_MISSING_ERROR);
 		try {

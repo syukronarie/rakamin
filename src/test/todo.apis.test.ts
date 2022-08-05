@@ -14,9 +14,8 @@ import {
 	todoSampleTitleNullArgsData,
 	todoSampleDescNullArgsData,
 	todoSampleCreateResultData,
-	sampleSomethingWrongData,
-	regexSWW,
 } from './todoSampleData';
+import { regexSWW, sampleSomethingWrongData } from './commonSampleData';
 
 const { BASE_API_URL } = CONST;
 
@@ -45,17 +44,17 @@ describe('todo API test', () => {
 				return res(ctx.status(200), ctx.json(todoSampleCreateResultData));
 			}),
 		);
-		const res = await todoAPI.createTodos(todoSampleArgsData);
+		const res = await todoAPI.createTodo(todoSampleArgsData);
 		expect(res).toStrictEqual(todoSampleCreateResultData);
 	});
 	it('should `/todos` return error missing mandatory field', async () => {
 		/* @ts-ignore */
-		await expect(todoAPI.createTodos(todoSampleTitleNullArgsData)).rejects.toHaveProperty(
+		await expect(todoAPI.createTodo(todoSampleTitleNullArgsData)).rejects.toHaveProperty(
 			'message',
 			'Mandatory Fields missing',
 		);
 		/* @ts-ignore */
-		await expect(todoAPI.createTodos(todoSampleDescNullArgsData)).rejects.toHaveProperty(
+		await expect(todoAPI.createTodo(todoSampleDescNullArgsData)).rejects.toHaveProperty(
 			'message',
 			'Mandatory Fields missing',
 		);
@@ -66,7 +65,7 @@ describe('todo API test', () => {
 				return res(ctx.status(401), ctx.json(sampleSomethingWrongData));
 			}),
 		);
-		await expect(todoAPI.createTodos(todoSampleWrongArgsData)).rejects.toThrow('401');
-		await expect(todoAPI.createTodos(todoSampleWrongArgsData)).rejects.toThrowError(regexSWW);
+		await expect(todoAPI.createTodo(todoSampleWrongArgsData)).rejects.toThrow('401');
+		await expect(todoAPI.createTodo(todoSampleWrongArgsData)).rejects.toThrowError(regexSWW);
 	});
 });
