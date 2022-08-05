@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 
+import Cookies from 'js-cookie';
 import { AxiosResponse } from 'axios';
 import { APIError, ClientError } from '@/utils/errors';
 
@@ -12,6 +13,7 @@ const userAPI = {
 			throw new ClientError(ERR_MSG.MANDATORY_FIELD_MISSING_ERROR);
 		try {
 			const result = await axiosInstance.post('/auth/login', { email, password });
+			Cookies.set('token', result.data.auth_token);
 			return result.data;
 		} catch (err) {
 			/* @ts-ignore */

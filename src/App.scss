@@ -26,3 +26,10 @@ $neutral100: #1d1f20;
 .ant-btn-link:focus {
 	color: $neutral100;
 }
+
+.droppable-card-body {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	gap: 6px;
+}

@@ -1,27 +1,30 @@
 import styled from '@emotion/styled';
 import { colors } from '@/utils/Constants';
 
-const Layout = styled.section`
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+const LayoutWrapper = styled.section`
 	width: 100vw;
 	height: 100%;
 `;
 
 const Header = styled.header`
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
+	position: fixed;
 	width: 100%;
-	height: 100%;
+	height: 64px;
+	padding: 0 64px;
+	background-color: #ffffff;
+
+	border-bottom: 1px solid ${colors.neutral40};
+	top: 0;
+	z-index: 2;
 `;
 
 const Content = styled.main`
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	margin: 120px auto;
 	width: 100%;
 	height: 100%;
 `;
@@ -32,6 +35,14 @@ const Footer = styled.footer`
 	align-items: center;
 	width: 100%;
 	height: 100%;
+`;
+
+const CardStyled = styled.div`
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	grid-column-gap: 8px;
+	grid-row-gap: 8px;
 `;
 
 const Card = styled.div`
@@ -118,10 +129,11 @@ const TextDesc = styled.p`
 export {
 	Card,
 	CardChild,
+	CardStyled,
 	Content,
 	Header,
 	Footer,
-	Layout,
+	LayoutWrapper,
 	Line,
 	ProgressContent,
 	Tag,
