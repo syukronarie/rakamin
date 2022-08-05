@@ -1,0 +1,35 @@
+@import 'antd/dist/antd.variable.min.css';
+
+$neutral100: #1d1f20;
+
+#root {
+	max-width: 100vw;
+	height: 100vh;
+	margin: 0;
+}
+
+.ant-progress-bg {
+	height: 14px !important;
+}
+
+.ant-btn-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	color: $neutral100;
+	gap: 6px;
+}
+
+.ant-btn-link:hover,
+.ant-btn-link:active,
+.ant-btn-link:focus {
+	color: $neutral100;
+}
+
+.droppable-card-body {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	gap: 6px;
+}
