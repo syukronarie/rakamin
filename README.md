@@ -44,7 +44,7 @@ pnpm run dev
 
 ## 🤝 Contributing
 
-Anyone can contribute with [issues](https://github.com/syukronarie/rakamin/issues) and [PRs](https://github.com/syukronarie/rakamin/pulls). If you're submitting a pull request, always create a new branch to work your changes, and try squashing commits down if possible. Always test any new code and make sure `npm test` passes and `npm run test:cover` for code coverage is adequate before opening a PR.
+Anyone can contribute with [issues](https://github.com/syukronarie/rakamin/issues) and [PRs](https://github.com/syukronarie/rakamin/pulls). If you're submitting a pull request, always create a new branch to work your changes, and try squashing commits down if possible. Always test any new code and make sure `npm test` passes and `npm run coverage` for code coverage is adequate before opening a PR.
 
 ## Author
 
