@@ -1,16 +1,24 @@
+/* eslint-disable react/prop-types */
+
+import { ConfigProvider } from 'antd';
+import { Content, Header, Layout } from './components/styled';
+import { colors } from './utils/Constants';
+import Cards from './components/Cards';
 import './App.scss';
-import { Button, ConfigProvider } from 'antd';
 
 ConfigProvider.config({
 	theme: {
-		primaryColor: '#01959F',
+		primaryColor: `${colors.primaryMain}`,
 	},
 });
 
 function App() {
 	return (
 		<ConfigProvider>
-			<Button>Test</Button>
+			<Layout className="container">
+				<Header>rakamin</Header>
+				<Content>{/* <Cards /> */}</Content>
+			</Layout>
 		</ConfigProvider>
 	);
 }
