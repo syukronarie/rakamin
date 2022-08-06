@@ -10,13 +10,15 @@
   <a href="https://codecov.io/gh/syukronarie/rakamin">
     <img src="https://codecov.io/gh/syukronarie/rakamin/branch/main/graph/badge.svg" />
   </a>
+	![Vercel](https://vercelbadge.vercel.app/api/syukronarie/rakamin)
+	![Netlify](https://badges.netlify.com/api/rakamin.svg?branch=main)(https://app.netlify.com/sites/rakamin/deploys)
 </p>
 
 ## ✨ What is rakamin?
 `rakamin` is front end app using react ts and vite for development phase.
 
 ## open deployment
-![Vercel](https://vercelbadge.vercel.app/api/syukronarie/rakamin)
+
 
 
 ## ⚡️ Installation
