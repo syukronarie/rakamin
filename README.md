@@ -16,8 +16,12 @@
 `rakamin` is front end app using react ts and vite for development phase.
 
 ## open deployment
-🚀[vercel](rakamin-sand.vercel.app)
-🚀[netlify](rakamin.netlify.app)
+<a href="rakamin-sand.vercel.app">
+<img alt="vercel" src="https://www.svgrepo.com/download/354512/vercel.svg" target="_blank" />
+</a>
+<a href="rakamin.netlify.app">
+<img alt="vercel" src="https://www.svgrepo.com/download/354512/vercel.svg" target="_blank" />
+</a>
 
 
 ## ⚡️ Installation
