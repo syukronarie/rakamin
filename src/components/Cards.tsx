@@ -7,15 +7,6 @@ import { Card, CardStyled, Tag, TextDesc } from './styled';
 
 import CardItem from './CardItem';
 
-type Todo = {
-	id: number;
-	title: string;
-	created_by: string;
-	created_at: string;
-	updated_at: string;
-	description: string;
-};
-
 interface CardProps {
 	todos: Todo[];
 	isLoading: boolean;
