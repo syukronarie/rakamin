@@ -13,9 +13,11 @@
 	<a href="https://vercelbadge.vercel.app/api/syukronarie/rakamin">
     <img src="https://vercelbadge.vercel.app/api/syukronarie/rakamin" />
   </a>
+	<a href="https://rakamin.netlify.app">
+		<img src="https://app.netlify.com/sites/rakamin/deploys">
+	</a>
 </p>
 
-[![netlify](https://img.shields.io/badge/dynamic/json.svg?url=https://api.netlify.com/api/v1/sites/rakamin.netlify.app/deploys&label=deploy&query=$[0].state&colorB=blue)](https://app.netlify.com/sites/rakamin/deploys)
 
 ## ✨ What is rakamin?
 `rakamin` is front end app using react ts and vite for development phase.
