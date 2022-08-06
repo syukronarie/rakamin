@@ -2,7 +2,7 @@ import userAPI from '@/api/user.apis';
 import { Alert } from '@/components';
 import { Button, Checkbox, Form, Input } from 'antd';
 import { useEffect } from 'react';
-import { useMutation } from 'react-query';
+import { useMutation } from '@tanstack/react-query';
 import { useNavigate } from 'react-router-dom';
 
 interface SignIn {
@@ -24,7 +24,7 @@ const SignIn = () => {
 	};
 
 	useEffect(() => {
-		if (signIn.isError) throw new Error(signIn.error);
+		if (signIn.isError) throw new Error(signIn.error as string);
 		if (signIn.isSuccess) {
 			Alert.signInSuccess(navigate);
 		}
