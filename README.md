@@ -10,11 +10,11 @@
   <a href="https://codecov.io/gh/syukronarie/rakamin">
     <img src="https://codecov.io/gh/syukronarie/rakamin/branch/main/graph/badge.svg" />
   </a>
-	<a href="https://vercelbadge.vercel.app/api/syukronarie/rakamin">
+	<a href="https://rakamin-sand.vercel.app">
     <img src="https://vercelbadge.vercel.app/api/syukronarie/rakamin" />
   </a>
 	<a href="https://rakamin.netlify.app">
-		<img src="https://app.netlify.com/sites/rakamin/deploys">
+		<img src="https://api.netlify.com/api/v1/badges/e0489faf-1e7e-4eec-9588-45e0ffe47d5a/deploy-status">
 	</a>
 </p>
 
