@@ -15,6 +15,10 @@
 ## ✨ What is rakamin?
 `rakamin` is front end app using react ts and vite for development phase.
 
+## open deployment
+`vercel`: rakamin-sand.vercel.app
+`netlfy`: rakamin.netlify.app
+
 
 ## ⚡️ Installation
 
