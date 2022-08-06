@@ -15,13 +15,7 @@ const routes: RouteObject[] = [
 			{
 				path: '/v1/signin',
 				element: <ProtectedRoute />,
-				children: [
-					{ index: true, element: <SignIn /> },
-					// {
-					// 	path: '/signup',
-					// 	element: <SignUp />,
-					// },
-				],
+				children: [{ index: true, element: <SignIn /> }],
 			},
 			{
 				path: '/v1/signup',
