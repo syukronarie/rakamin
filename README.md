@@ -10,8 +10,8 @@
   <a href="https://codecov.io/gh/syukronarie/rakamin">
     <img src="https://codecov.io/gh/syukronarie/rakamin/branch/main/graph/badge.svg" />
   </a>
-	<a>![Vercel](https://vercelbadge.vercel.app/api/syukronarie/rakamin)</a>
-	<a>![Netlify](https://badges.netlify.com/api/rakamin.svg?branch=main)</a>
+	<a>[Vercel](https://vercelbadge.vercel.app/api/syukronarie/rakamin)</a>
+	<a>[Netlify](https://badges.netlify.com/api/rakamin.svg?branch=main)</a>
 </p>
 
 ## ✨ What is rakamin?
