@@ -7,7 +7,11 @@ import { Content, Header, LayoutWrapper } from './styled';
 const Layout: React.FC = () => {
 	const navigate = useNavigate();
 	React.useEffect(() => {
-		if (Auth.isAuthorization()) navigate('/v1');
+		if (Auth.isAuthorization()) {
+			navigate('/v1');
+		} else {
+			navigate('/v1/signin');
+		}
 	}, [navigate]);
 	return (
 		<LayoutWrapper>
