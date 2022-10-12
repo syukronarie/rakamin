@@ -12,7 +12,6 @@ export const isHandlerEnabled = (config: any) => {
 export const requestHandler = (config: any) => {
 	if (isHandlerEnabled(config)) {
 		const auth = Auth.isAuthorization();
-		console.log(auth);
 		if (auth) {
 			config.headers.Authorization = `Bearer ${auth}`;
 		}

@@ -6,24 +6,6 @@ import { APIError, ClientError } from '@/utils/errors';
 import ERR_MSG from '@/utils/ErrorMessage';
 import axiosInstance from './axiosInstance';
 
-interface CreateItemArgs {
-	todoId: number;
-	name: string;
-	progressPercentage: number;
-}
-
-interface UpdateItemArgs {
-	targetTodoId: number;
-	itemId: number;
-	name: string;
-	progressPercentage: number;
-}
-
-interface DeleteItemArgs {
-	todoId: number;
-	itemId: number;
-}
-
 const itemAPI = {
 	async getItems(todoId: number): Promise<AxiosResponse> {
 		if (todoId === undefined || todoId == null)
