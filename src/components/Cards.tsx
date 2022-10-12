@@ -1,8 +1,10 @@
 /* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable @typescript-eslint/no-explicit-any */
+import itemAPI from '@/api/item.apis';
 import { Button, Spin } from 'antd';
 import { CirclePlusIcon } from '@/assets';
 import { DragDropContext, Droppable } from 'react-beautiful-dnd';
+import { useMutation } from '@tanstack/react-query';
 import { Card, CardStyled, Tag, TextDesc } from './styled';
 
 import CardItem from './CardItem';
@@ -22,15 +24,22 @@ const getListStyle = (_isDraggingOver: any) => ({
 const Cards: React.FC<CardProps> = (props: CardProps) => {
 	const { todos, isLoading } = props;
 
-	function onDragEnd(_result: any) {
-		// const { source, destination } = result;
-		// console.log(result);
+	const updateItem = useMutation((updateData: UpdateItemArgs) => itemAPI.updateItem(updateData));
+
+	function onDragEnd(result: any) {
+		const { source, destination } = result;
+		console.log(result);
 		// dropped outside the list
-		// if (!destination) {
-		// 	return;
-		// }
-		// const sInd = +source.droppableId;
-		// const dInd = +destination.droppableId;
+		if (!destination) {
+			return;
+		}
+		const sInd = +source.droppableId;
+		const dInd = +destination.droppableId;
+
+		console.log({ sInd, dInd });
+
+		// updateItem.mutate()
+
 		// if (sInd === dInd) {
 		// } else {
 		// }
@@ -42,7 +51,9 @@ const Cards: React.FC<CardProps> = (props: CardProps) => {
 				{isLoading && <Spin />}
 				{todos?.map((val) => (
 					<Card key={val.id}>
-						<Tag className="primary-surface">{val.title}</Tag>
+						<Tag className="primary-surface">
+							{val.title} todoId: {val.id}
+						</Tag>
 						<TextDesc>{val.description}</TextDesc>
 						<Droppable key={val.id} droppableId={`${val.id}`}>
 							{(provided, snapshot) => (

@@ -33,3 +33,21 @@ interface Todo {
 	updated_at: string;
 	description: string;
 }
+
+interface CreateItemArgs {
+	todoId: number;
+	name: string;
+	progressPercentage: number;
+}
+
+interface UpdateItemArgs {
+	targetTodoId: number;
+	itemId: number;
+	name: string;
+	progressPercentage: number;
+}
+
+interface DeleteItemArgs {
+	todoId: number;
+	itemId: number;
+}

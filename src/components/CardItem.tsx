@@ -62,7 +62,9 @@ const CardItem: React.FC<CardItem> = (props) => {
 							style={getItemStyle(snapshot.isDragging, provided.draggableProps.style)}
 						>
 							<CardChild>
-								<Text>{val.name}</Text>
+								<Text>
+									{val.name} itemId:{val.id}
+								</Text>
 								<Line />
 								<ProgressContent>
 									<Progress percent={val.progress_percentage} />
