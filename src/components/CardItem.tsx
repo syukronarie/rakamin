@@ -28,7 +28,6 @@ const getItemStyle = (_isDragging: any, draggableStyle: any) => ({
 	userSelect: 'none',
 	// padding: grid * 2,
 	// margin: `0 0 ${grid}px 0`,
-
 	// change background colour if dragging
 	// background: isDragging ? 'lightgreen' : 'grey',
 	width: '100%',

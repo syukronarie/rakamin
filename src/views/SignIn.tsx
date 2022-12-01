@@ -16,7 +16,9 @@ const SignIn = () => {
 	const navigate = useNavigate();
 
 	const onFinish = (values: SignIn) => {
-		signIn.mutate(values);
+		if (values) {
+			signIn.mutate(values);
+		}
 	};
 
 	const onFinishFailed = (errorInfo: unknown) => {
